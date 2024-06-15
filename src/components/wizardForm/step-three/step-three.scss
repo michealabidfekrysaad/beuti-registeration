@@ -1,0 +1,168 @@
+@import './../../../scss/varibales';
+.input-hidden{
+    height: 0;
+    width: 0;
+    border: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.radio-inline {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .checkmark {
+        position: absolute;
+        top: 2px;
+        height: 16px;
+        width: 16px;
+        background-color: #eee;
+        border: 1px solid #e7e8f2;
+        border-radius: 50%;
+        color: white;
+        line-height: 15px;
+        text-align: center;
+        font-size: 12px;
+    }
+    &:hover input ~ .checkmark {
+        background-color: #e7e8f2;
+    }
+    input:checked ~ .checkmark {
+        background-color: white;
+        border: 1px solid $mainColor;
+        color: $mainColor;
+    }
+}
+.ar-font .employeesTable{
+    direction: rtl;
+    table{
+        tbody{
+            tr{
+             
+                td:nth-of-type(3){
+                    text-align: left;
+                    padding-right: 30px;
+                }
+            }
+                }
+}
+}
+.employeesTable{
+    margin-top: 30px;
+    p:nth-of-type(1){
+        border-bottom: 1px solid #e7e8f2;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+    
+    table{
+        tbody{
+            tr{
+                background-color: #fcfcfd;
+                td{
+                    border: 0;
+                }
+                td:nth-of-type(1){
+                    min-width: 70%;
+                }
+                td:nth-of-type(3){
+                    text-align: right;
+                    padding-right: 30px;
+                    a{
+                        color: white;
+                        background-color: $mainColor;
+                        width: 16px;
+                        display: inline-block;
+                        text-align: center;
+                        height: 16px;
+                        line-height: 16px;
+                        border-radius: 25px;
+                        font-size: 12px;
+                        &:hover,&:focus{
+                            background-color: darken($mainColor, 10%);
+                        }
+                    }
+                }
+            }
+            tr:nth-of-type(2n+1){
+                background-color: #f1f2f7;
+            }
+        }
+    }
+}
+.checkmark-move-r {
+    right: 0 !important;
+}
+
+.checkmark-move-l {
+    left: 0 !important;
+}
+.input-padding-right {
+    padding-right: 25px !important;
+}
+
+.input-padding-left {
+    padding-left: 25px !important;
+    margin-right: 20px !important;
+
+}
+.employee-box{
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding-bottom: 20px;
+    &__title{
+        padding: 8px 18px;
+        background: #EAEAEA;
+    }
+    &__controllers{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        padding:12px 9px;
+        margin: 0 18px;
+        &-input{
+            width: 100%;
+            border-radius: 5px;
+            height: 33px;
+            border: 1px solid #eee;
+            padding: 0px 5px;
+            &--error{
+                box-shadow: 0px 2px 0px #FF0506;
+                border-color: #FF050647;
+            }
+            &:focus{
+                box-shadow: 0px 2px 0px #b92baa;
+                border-color: #b92baa47;
+                outline: none;
+            }
+            &::placeholder{
+                font-size: 12px;
+            }
+        }
+&-select{
+    width: 100%;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    height: 33px;
+    padding: 0px 5px;
+    background-color: white;
+    &:focus{
+        box-shadow: 0px 2px 0px #b92baa;
+        border-color: #b92baa47;
+        outline: none;
+    }
+
+}
+    }
+}
+.ar-font .employee-box__controllers-select {
+direction: rtl;
+}

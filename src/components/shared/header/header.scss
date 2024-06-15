@@ -1,0 +1,31 @@
+@import './../../../scss/varibales';
+@import './../../../scss/fonts';
+.header {
+	padding: 10px 0;
+	min-height: 70px;
+	background-color: $white;
+	display: flex;
+	align-items: center;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.2);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.2);
+  box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.2);
+  
+  &__logo{
+    width: 100%;
+	max-width: 138px;
+		height: auto;
+	}
+	&__lang {
+		font-family: "Cairo",sans-serif;
+		background-color: inherit;
+    padding: 0;
+    border: 0;
+		color: #666;
+		font-size: 14px;
+		transition: color .3s ease-in-out, background-color .3s ease-in-out;
+		cursor: pointer;
+		&:hover,&:focus{
+			color: $mainColor !important;
+		}
+	}
+}

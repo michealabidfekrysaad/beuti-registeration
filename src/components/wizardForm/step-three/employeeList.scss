@@ -1,0 +1,79 @@
+@import './../../../scss/varibales';
+
+        tr{
+            background-color: #fcfcfd;
+            td{
+                border: 0;
+            }
+            td:nth-of-type(1){
+                min-width: 70%;
+            }
+            td:nth-of-type(3){
+                text-align: right;
+                padding-right: 30px;
+                a{
+                    color: white;
+                    background-color: $mainColor;
+                    width: 16px;
+                    display: inline-block;
+                    text-align: center;
+                    height: 16px;
+                    line-height: 18px;
+                    border-radius: 25px;
+                    font-size: 12px;
+                    text-decoration: none;
+                    &:hover,&:focus{
+                        background-color: darken($mainColor, 10%);
+                        text-decoration: none;
+
+                    }
+                }
+            }
+        }
+        tr:nth-of-type(2n+1){
+            background-color: #f1f2f7;
+        }
+
+        .justify-content-ar {
+            justify-content: flex-end;
+        }
+
+        .justify-content-en {
+            justify-content: flex-start;
+        }
+
+        .tolltip {
+            background: transparent !important;
+            border: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            position: relative;
+            z-index: 999;
+        }
+        .tolltip-popup {
+            position: relative;
+            z-index: 99999;
+        }
+        .removeEmployee{
+            background-color: #b92baa;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 0 auto;
+            &:hover{
+                opacity: 0.8;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        .ar-font{
+            .removeEmployee{
+                            margin: 0 auto 0 0;
+            }
+        }

@@ -1,0 +1,240 @@
+@import "./../../../scss/varibales";
+
+.react-timekeeper__clock-wrapper {
+  background: red;
+}
+.react-timekeeper__tb-hour {
+  color: #bc58a9 !important ;
+  // pointer-events: none !important;
+}
+.react-timekeeper__tb-minute {
+  color: #8c8c8c !important ;
+  // pointer-events: none !important;
+}
+
+circle,
+line {
+  fill: #bc58a93b !important ;
+}
+.css-8xneil-Meridiems {
+  background: #bc58a93b !important ;
+}
+
+.workingHours {
+  width: 100%;
+  tr {
+    td {
+      vertical-align: middle;
+      padding-bottom: 15px;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: $mainColor;
+        &:hover {
+          color: darken($mainColor, 10%);
+        }
+      }
+    }
+    // td:nth-of-type(2){
+    //     text-align: left;
+    // }
+    @media (max-width: 767px) {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  tr.off {
+    color: #999;
+    .inputTime {
+      opacity: 0.5;
+    }
+  }
+}
+
+.checkbox {
+  margin-top: inherit;
+  margin-bottom: 0;
+  position: relative;
+  cursor: pointer;
+  .checkboxLabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid #e7e8f2;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .checkboxLabel:hover input ~ .checkmark {
+    background-color: #eee;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .checkboxLabel input:checked ~ .checkmark {
+    background-color: $mainColor;
+    border: 1px solid $mainColor;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .checkboxLabel input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkboxLabel .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.inputTime {
+  background-color: #f1f2f7;
+  border-radius: 8px;
+  border: 0;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  // width: 100%;
+  max-width: 120px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .inputTime {
+    width: 64px;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+}
+
+tr.off {
+  color: #999;
+  .inputTime {
+    opacity: 0.5;
+  }
+}
+
+.timeKeeper-container .react-timekeeper {
+  position: absolute !important;
+  top: 60px;
+  left: 0;
+  z-index: 99;
+  justify-content: center;
+  max-width: 260px;
+  direction: ltr !important;
+  @media (max-width: 768px) {
+    width: 260px !important;
+    // position: absolute !important;
+    // left: 0;
+  }
+}
+.relative-position {
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .picker-mobile-start {
+    position: absolute !important;
+    left: -50px;
+  }
+  .picker-mobile-end {
+    position: absolute !important;
+    left: -14px !important;
+  }
+}
+
+.css-15x5h67-TimeDropdown {
+  display: none !important;
+}
+
+.react-timekeeper__time-dropdown {
+  display: none !important;
+}
+
+.wide-desktop {
+  width: 300px;
+  @media (max-width: 1200px) {
+    width: 200px !important;
+    // position: absolute !important;
+    // left: 0;
+  }
+  @media (max-width: 980px) {
+    width: 30px !important;
+    // position: absolute !important;
+    // left: 0;
+  }
+}
+.workinghours {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  &:last-of-type {
+    border-bottom: none;
+  }
+  &-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    p {
+      margin-bottom: 0px;
+    }
+    label {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.ar-font .workinghours-row {
+  flex-direction: row-reverse;
+}
+.apply-btn {
+  border: none;
+  background-color: #fff;
+  text-decoration: underline;
+  font-size: 14px;
+  color: rgba(152, 157, 200, 1);
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.error-border {
+  border-color: red;
+}

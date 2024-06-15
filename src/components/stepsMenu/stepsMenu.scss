@@ -1,0 +1,390 @@
+@import "./../../scss/varibales";
+.stepsMenu {
+  margin-right: -10px;
+  .nav {
+    padding: 0;
+    li {
+      // pointer-events: none;
+      margin: 20px 0;
+      .iconContainer {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        border: 1px solid #c3bebe;
+        border-radius: 28px;
+        background-color: #fff;
+        color: #c3bebe;
+        text-align: center;
+        line-height: 28px;
+        position: relative;
+        z-index: 2;
+        .icon-info{
+          line-height: 27px;
+        }
+      }
+      .margin-r {
+        margin-left: 5px;
+
+      }
+      .margin-l {
+        margin-right: 5px;
+
+      }
+      .iconContainer:after {
+        content: "";
+        height: 40px;
+        width: 1px;
+        background-color: #c3bebe;
+        position: absolute;
+        top: -41px;
+        left: 50%;
+        z-index: 1;
+      }
+
+      a {
+        // padding: 10px 15px 10px 15px;
+        color: black;
+        background-color: transparent;
+        font-family: "Proxima Nova bold", sans-serif;
+        text-decoration: none;
+      }
+      // a:before{
+      //     content: "";
+      //     height: 6px;
+      //     width: 6px;
+      //     background-color: $mainColor;
+      //     border-radius: 6px;
+      //     display: inline-block;
+      //     margin-right: 15px;
+      //     transition: opacity 0.3s ease-in-out;
+      //     margin-top: 10px;
+      //     opacity: 0;
+      //     line-height: 1;
+      // }
+      @media screen and (max-width: 800px) {
+        // font-size: 14px;
+        margin-right: -1em;
+      }
+    }
+    li:first-child {
+      .iconContainer:after {
+        display: none;
+      }
+    }
+    li.active {
+      // pointer-events: all;
+      cursor: pointer;
+      .iconContainer {
+        background-color: $mainColor;
+        color: white;
+        border-color: transparent;
+      }
+      .iconContainer:after {
+        background-color: $mainColor;
+      }
+
+      a {
+        color: $mainColor;
+        background-color: transparent;
+      }
+      a:before {
+        opacity: 1;
+      }
+    }
+    li.active ~ li {
+      // pointer-events: none;
+      // cursor: pointer;
+    }
+    li.done {
+      // pointer-events: all;
+      a {
+        color: $mainColor;
+      }
+      .iconContainer {
+        background-color: $mainColor;
+
+        color: white;
+        border-color: $mainColor;
+        span:before {
+          content: "\e906";
+        }
+      }
+      .iconContainer:after {
+        background-color: $mainColor;
+      }
+    }
+  }
+}
+.rtl-dir.mobNav{
+  margin-right: 20px;
+  margin-left: 0px;
+}
+.mobNav {
+  margin-top: 10px;
+  padding: 10px 0;
+  min-height: 70px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.2);
+  margin-bottom: 30px;
+  margin-left: 20px;
+  
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  .back {
+    display: none;
+    color: #9090ab;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .finsh {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    tr {
+      td {
+        #tabTitle {
+          font-family: "Proxima Nova bold", sans-serif;
+          color: $mainColor;
+          @media screen and (min-width: 399) {
+            color: red;
+            font-size: 0.5em;
+          }
+        }
+        .iconContainer {
+          display: inline-block;
+          width: 28px;
+          height: 28px;
+          border: 1px solid $mainColor;
+          border-radius: 28px;
+          background-color: $mainColor;
+          color: white;
+          text-align: center;
+          line-height: 30px;
+          margin-right: 5px;
+          position: relative;
+          z-index: 2;
+        }
+      }
+      td:first-child {
+        width: auto;
+        a {
+          float: left;
+          line-height: 1;
+          margin-right: 5px;
+        }
+      }
+      td:last-child {
+        text-align: left;
+        padding-left: 15px;
+        color: #9090ab;
+        a {
+          color: #9090ab;
+        }
+        #tabIndex {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+tr:nth-of-type(2n + 1) {
+  background: transparent;
+  border: none;
+}
+.v-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn.next,
+.btn.finish {
+  float: right;
+}
+.btn.back,
+.btn.finish {
+  display: none;
+}
+
+.sideBar {
+  margin-right: -10px;
+  .nav {
+    li {
+      // pointer-events: none;
+      .iconContainer {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        border: 1px solid #c3bebe;
+        border-radius: 28px;
+        background-color: #fff;
+        color: #c3bebe;
+        text-align: center;
+        line-height: 28px;
+        margin-right: 5px;
+        position: relative;
+        z-index: 2;
+      }
+      .iconContainer:after {
+        content: "";
+        height: 40px;
+        width: 1px;
+        background-color: #c3bebe;
+        position: absolute;
+        top: -41px;
+        left: 50%;
+        z-index: 1;
+      }
+
+      a {
+        // padding: 10px 15px 10px 15px;
+        color: black;
+        background-color: transparent;
+        font-family: "Proxima Nova bold", sans-serif;
+      }
+      //   a:before {
+      //     content: "";
+      //     height: 6px;
+      //     width: 6px;
+      //     background-color: $mainColor;
+      //     border-radius: 6px;
+      //     display: inline-block;
+      //     margin-right: 15px;
+      //     transition: opacity 0.3s ease-in-out;
+
+      //     margin-top: 10px;
+      //     opacity: 0;
+      //     line-height: 1;
+      //   }
+    }
+    li:first-child {
+      .iconContainer:after {
+        display: none;
+      }
+    }
+    li.active {
+      // pointer-events: none;
+      cursor: pointer;
+      .iconContainer {
+        background-color: $mainColor;
+
+        color: white;
+        border-color: transparent;
+      }
+      .iconContainer:after {
+        background-color: $mainColor;
+      }
+
+      a {
+        color: $mainColor;
+        background-color: transparent;
+      }
+      a:before {
+        opacity: 1;
+      }
+    }
+    li.active ~ li {
+      pointer-events: none;
+      cursor: pointer;
+    }
+    li.done {
+      // pointer-events: all;
+      a {
+        color: $mainColor;
+      }
+      .iconContainer {
+        background-color: $mainColor;
+
+        color: white;
+        border-color: $mainColor;
+        span:before {
+          content: "\e906";
+        }
+      }
+      .iconContainer:after {
+        background-color: $mainColor;
+      }
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                                New Side Menu                               */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+  .registeration-steps {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    top: 35px;
+    left: -85px;
+    right: auto;
+    direction: rtl;
+
+  }
+  .nav-wrapper {
+    .nav {
+      flex-direction: column;
+      font-size: 12px;
+
+      &-item {
+        &__step {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .ar-font {
+    .registeration-steps {
+      background-color: transparent;
+      right: -68px;
+
+      left: auto;
+
+    }
+    .nav-wrapper {
+      .nav {
+        &-item {
+          &__step {
+            display: flex;
+            flex-direction: row-reverse;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .registeration-steps {
+    left: -100px;
+    right: auto;
+  }
+  .nav-wrapper {
+    .nav {
+      font-size: 14px;
+    }
+  }
+  .ar-font {
+    .registeration-steps {
+      right: -80px;
+      left: auto;
+
+    }
+  }
+}

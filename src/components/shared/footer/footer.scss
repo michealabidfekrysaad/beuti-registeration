@@ -1,0 +1,44 @@
+@import './../../../scss/varibales';
+.footer {
+	padding: 10px 0;
+	min-height: 70px;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.2);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.2);
+	box-shadow: 0px 0px 5px 0px rgba(204,204,204,0.2);
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+  &__copyrights{
+    text-align: center;
+		color: #9090ab;
+		margin: 0;
+	}
+  &__link{
+	color: #b92baa !important;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  &__media{
+	  font-size: 20px;
+	  .fa-twitter{
+		color: #00aced;
+		&:hover{
+		opacity: 0.8;
+		}
+	  }
+	  .fa-instagram{
+		color: transparent;
+		background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+		background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+		background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+		background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+		background-clip: text;
+		-webkit-background-clip: text;   
+		&:hover{
+			opacity: 0.8;
+			}
+	  }
+  }
+
+}

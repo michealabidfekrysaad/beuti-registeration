@@ -1,0 +1,74 @@
+#done-popup{
+	// background-image: url(../img/popup_bg.png);
+	img {
+		width: 80%;
+	}
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	h1{
+		font-size: 28px;
+		font-weight: bold;
+		margin-top: 30px;
+		font-family: 'Proxima Nova bold', sans-serif;
+	}
+	p{
+		font-size: 16px;
+		color: #9090AB;
+	}
+	.downloadApp{
+		margin: 10px 0;
+		a{
+			margin: 0 5px;
+			display: inline-block;
+		}
+	}
+	.btnDefault{
+		
+		display: inline-block;
+		padding: 14px 20px;
+		border-radius: 8px;
+		font-weight: bold;
+	}
+}
+.overlay {
+		position: fixed;
+    top: 0;
+    left: 0;
+		width: 100%;
+		min-width: 360px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+		z-index: 2;
+		margin: 0 auto;
+		text-align: center;
+		align-items: center;
+		display: flex;
+}
+.white-popup {
+    z-index: 999;
+		position: relative;
+		// left: 10%;
+    background: #fff;
+		padding: 50px 20px;
+		min-width: 360px;
+    // max-width: 860px;
+    // margin: 20px auto;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+.outer {
+	// height: 100%;
+    // position: absolute;
+    width: 50% - 360;
+    margin: 0 auto;
+    // display: flex;
+    // align-items: center
+}
+
+.btnDefault {
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+

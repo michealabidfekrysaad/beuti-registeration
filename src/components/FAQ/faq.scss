@@ -1,0 +1,48 @@
+@import './../../scss/varibales';
+
+.form {
+    margin: 20px 0;
+    &__question {
+        padding-right: 15px;
+        padding-left: inherit;
+        h1,h3 {
+            font-size: 15px;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 5px;
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+                line-height: 0;
+                font-size: 0;
+                position: absolute;
+                top: 3px;
+            }
+        }
+        &__headline-ar {
+            &::before {
+                content: '';
+                left: inherit;
+                right: -15px;
+                border-right: 8px solid $mainColor;
+                border-left: 0;
+            }
+        }
+        &__headline-en {
+            &::before {
+                content: '';
+                right: inherit;
+                border-left: 8px solid $mainColor;
+                left: -15px;
+                border-right: 0;
+            }
+        }
+    }
+    &__answer {
+        color: $label;
+        font-size: 15px;     
+    }
+}

@@ -1,0 +1,16 @@
+@import './../../scss/varibales';
+.TermsAndCoditionsBody {
+    &__p {
+        font-size: 12px;
+        color: $label;
+        li {
+            list-style: none;
+        }
+    }
+    &__p_bold {
+        font-size: 12px;
+        font-weight: bold;
+        color: $label;
+    }
+  
+}

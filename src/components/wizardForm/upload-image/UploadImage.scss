@@ -1,0 +1,43 @@
+#image-popup {
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: "Proxima Nova bold", sans-serif;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+//   min-width: 500px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.image-popup {
+  z-index: 999;
+  box-shadow: 0px 0px 14px 9px #bb55aa4d;
+  position: relative;
+  height: 400px;
+  background: #fff;
+  padding: 20px 20px;
+//   min-width: 500px;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+}
+.outer-image {
+  width: 60% !important;
+  margin: 0 auto;
+}

@@ -1,0 +1,35 @@
+@import "./../scss/base.scss";
+.route-wrapper {
+  padding: 30px 0;
+  min-height: calc(100vh - 140px);
+  max-width: calc(100vw - 18px);
+}
+
+// TO DISABLED AUTO FILL BUTTON IN SAFARI BRWOSER (PASSWORD SUGGESTION)
+::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+}
+
+td {
+  p {
+    margin-top: 9px;
+    margin-bottom: 0px;
+    @media screen and (max-width: 900px) {
+      margin-top: 3px;
+    }
+  }
+}
+
+.checkbox .checkmark {
+  display: block;
+  position: relative !important;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 3px;
+  }
+}
+// .ar-font .checkbox .checkmark {
+//   // margin-top: 8px;
+//   left: -20px;
+//   right: auto;
+// }

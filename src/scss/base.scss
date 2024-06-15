@@ -1,0 +1,161 @@
+@import "./varibales";
+@import "./fonts";
+@import "./react-md";
+@import "./card";
+
+// Any variable overrides. The following just changes the default theme to use teal and purple.
+$md-primary-color: $md-teal-500;
+$md-secondary-color: $md-purple-a-400;
+body {
+  background-color: $body_color;
+  font-family: "Proxima Nova Regular", sans-serif;
+}
+body,
+html {
+  text-rendering: optimizeLegibility;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.rtl-dir {
+  direction: rtl;
+}
+.ltr-dir {
+  direction: ltr;
+}
+.ar-font {
+  font-family: "Cairo" !important;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.left-0 {
+  left: 0;
+  position: absolute;
+}
+.right-0 {
+  right: 0;
+  position: absolute;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-cog:before {
+  content: "\e901";
+}
+.icon-gear:before {
+  content: "\e901";
+}
+.icon-settings:before {
+  content: "\e901";
+}
+.icon-options:before {
+  content: "\e901";
+}
+.icon-info:before {
+  content: "\e903";
+}
+.icon-users:before {
+  content: "\e902";
+}
+.icon-clock:before {
+  content: "\e900";
+}
+.icon-cancel:before {
+  content: "\e5c9";
+}
+.icon-delete:before {
+  content: "\e872";
+}
+.icon-list:before {
+  content: "\e896";
+}
+.icon-done:before {
+  content: "\e906";
+}
+.beuti-container {
+  width: 55% !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .beuti-container {
+    width: 65% !important;
+  }
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .beuti-container {
+    width: 75% !important;
+  }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .beuti-container {
+    width: 85% !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .beuti-container {
+    width: 95% !important;
+  }
+}
+.font-14px {
+  font-size: 14px;
+}
+// Spannier
+#loading-bar-spinner.spinner {
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+  position: absolute;
+  z-index: 19 !important;
+  animation: loading-bar-spinner 400ms linear infinite;
+}
+
+#loading-bar-spinner.spinner .spinner-icon {
+  width: 40px;
+  height: 40px;
+  border: solid 4px transparent;
+  border-top-color: #b92baa !important;
+  border-left-color: #b92baa !important;
+  border-radius: 50%;
+}
+
+@keyframes loading-bar-spinner {
+  0% {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.google-input-search:focus::placeholder {
+  color: transparent;
+}

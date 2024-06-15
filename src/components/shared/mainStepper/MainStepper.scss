@@ -1,0 +1,58 @@
+@import "./../../../scss/varibales";
+
+.mainstepper {
+  &-step {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    &__bullet {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      line-height: 34px;
+      background: #eaeaea;
+      margin: 9px;
+      font-size: 16px;
+    }
+    &__text {
+      color: #787878;
+      font-size: 16px;
+    }
+  }
+  &-step-active {
+    color: #fff;
+    .mainstepper-step__bullet {
+      background: $mainColor;
+    }
+    .mainstepper-step__text {
+      color: $mainColor;
+    }
+  }
+}
+.ar-font {
+  .mainstepper-step,
+  .row {
+    flex-direction: row-reverse;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .mainstepper {
+    &-step {
+      &__bullet {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        line-height: 18px;
+        background: #eaeaea;
+        margin: 5px;
+        font-size: 11px;
+      }
+      &__text {
+        color: #787878;
+        font-size: 15px;
+      }
+    }
+  }
+}

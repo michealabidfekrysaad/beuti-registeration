@@ -1,0 +1,53 @@
+@import "./../../../../scss/varibales";
+
+.form {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(204, 204, 204, 0.2);
+  margin-bottom: 20px;
+  padding: 30px 0;
+  border-radius: 4px;
+  padding: 15px;
+  // height: 100%;
+  &__title {
+    // margin-bottom: 30px;
+    h2 {
+      font-size: 18px;
+      color: $mainColor;
+      line-height: 1;
+      margin: 0 0 15px 0;
+      font-weight: bold;
+    }
+    h1 {
+      color: $black;
+      font-size: 28px;
+      font-family: "Proxima Nova bold", sans-serif;
+    }
+    p {
+      color: $label;
+    }
+  }
+}
+
+.form__title .h1-registar {
+  font-size: 35px;
+  color: $mainColor;
+  line-height: 1;
+  // margin: 0 0 15px 0;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .form__title .h1-registar {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .form__title .h1-registar {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,25 @@
+.ar.verifyAdveriser {
+    
+.modal-header{
+    direction: rtl;
+    color: #b92baa;
+    .h4{
+        font-size: 30px !important;
+
+    }
+}
+.modal-body{
+    text-align: end;
+    font-weight: bold;
+    padding: 30px 20px;
+    font-size: 18px;
+}
+.modal-footer{
+    justify-content: end;
+    a{
+        color: #b92baa;
+        font-size: 20px;
+    }
+}
+
+}
